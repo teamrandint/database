@@ -15,7 +15,7 @@ Stored as a floating point number for now, however Redis does offer some accurac
 - RemoveFunds
 
 
-## $USERID:Stocks
+### $USERID:Stocks
 Redis hash of the stocks a user owns. Stocks are stored as integers.
 
 #### Functions:
@@ -23,7 +23,7 @@ Redis hash of the stocks a user owns. Stocks are stored as integers.
 - GetStock
 - RemoveFunds
 
-## $USERID:SellOrders
+### $USERID:SellOrders
 
 Keeps tracks of user's uncomitted sell orders.
 
@@ -31,14 +31,14 @@ Keeps tracks of user's uncomitted sell orders.
 - PushSell
 - PopSell
 
-## $USERID:BuyOrders
+### $USERID:BuyOrders
 Keeps tracks of user's uncomitted buy orders.
 
 #### Functions:
 - PushBuy
 - PopBuy
 
-## $USERID:SellTriggers
+### $USERID:SellTriggers
 Keeps tracks of user's running triggers.
 
 #### Functions:
@@ -46,7 +46,7 @@ Keeps tracks of user's running triggers.
 - RemoveSellTrigger
 - GetSellTrigger
 
-## $USERID:BuyTriggers
+### $USERID:BuyTriggers
 Keeps tracks of user's running triggers.
 
 #### Functions:
@@ -54,13 +54,13 @@ Keeps tracks of user's running triggers.
 - RemoveBuyTrigger
 - GetBuyTrigger
 
-## $USERID:BalanceReserve
+### $USERID:BalanceReserve
 Keeps tracks of user's reserve account balance. This holds funds offset for triggers
 
-## $USERID:StocksReserve
+### $USERID:StocksReserve
 Keeps tracks of user's waiting sell triggers balance.
 
-## $USERID:History
+### $USERID:History
 Keeps tracks of all user's account transactions.
 
 _Not implemented yet_
